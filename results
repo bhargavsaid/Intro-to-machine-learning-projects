@@ -1,0 +1,29 @@
+results of mini projects:
+
+mini-project 1:
+for naive_bayes
+training time:
+prediction time:
+accuracy
+
+mini-project2:
+for SVM
+training time:145.45
+prediction time:15
+accuracy:0.98
+
+slicing the data set
+accuracy=0.88,kernel=linear
+accuracy=0.61,kernel=rbf
+
+changing the parameter C:
+kernel=rbf 
+C=10,   accuracy=0.61
+C=100   accuracy= 
+C=1000  accuracy=0.82
+C=10000 accuracy=0.89
+
+
+
+
+
