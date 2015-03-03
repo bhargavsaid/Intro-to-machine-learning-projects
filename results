@@ -23,6 +23,11 @@ C=100   accuracy=
 C=1000  accuracy=0.82
 C=10000 accuracy=0.89
 
+mini-project3:
+for Decision trees:
+min_samples_split=40
+accuracy=0.97
+
 
 
 
