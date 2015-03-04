@@ -22,7 +22,7 @@ dictionary = pickle.load( open("../final_project/final_project_dataset_modified.
 
 ### list the features you want to look at--first item in the 
 ### list will be the "target" feature
-features_list = ["bonus", "salary"]
+features_list = ["bonus", "long_term_incentive"]
 data = featureFormat( dictionary, features_list, remove_any_zeroes=True)
 target, features = targetFeatureSplit( data )
 
@@ -37,6 +37,12 @@ test_color = "r"
 ### your regression goes here!
 ### please name it reg, so that the plotting code below picks it up and 
 ### plots it correctly
+from sklearn import linear_model
+reg=linear_model.LinearRegression()
+reg.fit(feature_train,target_train)
+print reg.coef_
+print reg.intercept_
+
 
 
 
@@ -55,6 +61,8 @@ for feature, target in zip(feature_train, target_train):
 ### labels for the legend
 plt.scatter(feature_test[0], target_test[0], color=test_color, label="test")
 plt.scatter(feature_test[0], target_test[0], color=train_color, label="train")
+print reg.score(feature_train,target_train)
+print reg.score(feature_test,target_test)
 
 
 
